@@ -1,5 +1,5 @@
 plugins {
-    id 'fabric-loom' version '1.2-SNAPSHOT'
+    id 'fabric-loom' version '1.7-SNAPSHOT'
 	id "com.modrinth.minotaur" version "2.+"
 	id "com.matthewprenger.cursegradle" version "1.4.0"
 }
@@ -20,11 +20,11 @@ repositories {
     maven { url "https://maven.shedaniel.me/" }
 }
 
-sourceCompatibility = 17
-targetCompatibility = 17
+sourceCompatibility = 22
+targetCompatibility = 22
 
 ext.Versions = new Properties()
-Versions.load(file("Versionfiles/mcversion-1.20.4.properties").newReader())
+Versions.load(file("Versionfiles/mcversion-1.21.properties").newReader())
 
 archivesBaseName = "easiervillagertrading"
 ext.projectVersion = "1.5.4"
